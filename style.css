@@ -1,0 +1,266 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/font/Roboto-Regular.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+    box-sizing: border-box;
+}
+
+.continer {
+    display: flex;
+    width: 65rem;
+    margin: 8rem auto;
+    background-color: #ffe5de;
+    border-radius: 1em;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+.backgroundImg {
+    border-radius: 1em;
+}
+
+.formContiner {
+    background-color: #ffffff;
+    margin-left: auto;
+    width: 30rem;
+    height: 39rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 0 1rem 1rem 0;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+form {
+    width: 30rem;
+    height: 30rem;
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.title {
+    font-size: 2.2rem;
+    color: #bc5d6c;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.inputText {
+    height: 4rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    border: none;
+    border-bottom: 1px solid gray;
+    padding-left: 0.5rem;
+    outline: none;
+    border-radius: 0.5rem;
+}
+
+.inputText:focus {
+    background-color: rgba(243, 241, 241, 0.703);
+}
+
+.email {
+    margin-bottom: 2rem;
+}
+
+.forgot_Show {
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.forgotText {
+    text-align: right;
+    font-size: 0.8rem;
+}
+
+.btnLogin {
+    font-size: 1.2rem;
+    height: 3rem;
+    width: 100%;
+    background-color: rgb(183, 157, 218);
+    border: none;
+    border-radius: 0.5rem;
+    color: #ffffff;
+    margin: 2rem 0 3rem 0;
+    cursor: pointer;
+}
+
+.btnLogin:hover {
+    background-color: rgb(166, 142, 196);
+}
+
+.textContiner {
+    display: flex;
+    margin-bottom: 1rem;
+
+}
+
+.line {
+    height: 2px;
+    border-bottom: 1px solid gray;
+    position: relative;
+    top: 5px;
+    width: 9.7rem;
+    border-radius: 1rem;
+
+}
+
+.textContiner {
+    display: flex;
+    margin-bottom: 1rem;
+
+}
+
+.text {
+    margin: 0 5px;
+    color: gray;
+}
+
+.btnContiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.iconText {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.iconContiner {
+    padding: 1rem;
+    width: 7.5rem;
+    border-radius: 0.5rem;
+    color: #ffff;
+}
+
+.btnGoogel {
+    color: #dc472e;
+    border: 1px solid #dc472e;
+    text-align: center;
+}
+
+.btnGoogel:hover {
+    background-color: #dc472e;
+    color: #fff;
+}
+
+.btnFacebook {
+    color: #39569e;
+    border: 1px solid #39569e;
+    text-align: center;
+}
+
+.btnFacebook:hover {
+    background-color: #39569e;
+    color: #fff;
+}
+
+.btnTwitter {
+    color: #52aaf4;
+    border: 1px solid #52aaf4;
+    text-align: center;
+}
+
+.btnTwitter:hover {
+    background-color: #52aaf4;
+    color: #fff;
+}
+
+/* responsive */
+@media only screen and (max-width: 1200px) {
+
+    .continer {
+        width: 53rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .backgroundImg {
+        width: 28rem;
+    }
+
+    .formContiner {
+        width: 25rem;
+    }
+
+    .line {
+        width: 8.7rem;
+    }
+
+    .iconContiner {
+        width: 7rem;
+        padding: 0;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    form {
+        padding: 1rem 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
+    .backgroundImg {
+        display: none;
+    }
+
+    .continer {
+        width: 25rem;
+        margin: 5rem auto;
+    }
+
+    .formContiner {
+        border-radius: 1rem;
+    }
+    .titleBtn{
+        display: none;
+    }
+    .iconContiner{
+        border-radius: 2rem;
+        width: 3rem;
+        height: 3rem;
+    }
+    .btnContiner{
+        width: 22rem;
+        justify-content: space-evenly;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 576px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .continer {
+        align-items: center;
+        width: 15rem;
+        margin-left: -9rem;
+        margin-right: auto;
+    }
+
+    .formContiner {
+        height: 31rem;
+    }
+    
+
+}

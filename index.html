@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+</head>
+
+<body>
+    <main>
+    <div class="continer">
+        <img src="images/img.jpg" class="backgroundImg">
+        <div class="formContiner">
+            <form action="">
+                <h1 class="title">Login</h1>
+                <input type="email" placeholder="Email :" class="inputText email" required>
+                <input type="password" placeholder="Password :" class="inputText password" required maxlength="8" id="myInput">
+        
+                <a href="" class="forgotText">forgot password?</a>
+                <button class="btnLogin">Login</button>
+                <div class="textContiner">
+                    <span class="line"></span>
+                    <h6 class="text">Or login with</h6>
+                    <span class="line"></span>
+                </div>
+                <div class="btnContiner">
+                    <a class="iconText"
+                        href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?client_id=621054469194-n994fsi34huk5fq22775qqi75jpag3ta.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fvirauth.com%2Fcallback&scope=openid%20profile%20email&response_type=code&state=OR7kTO4axDMfV99oxL1ptJkYhqTDQTtvYdJCUPhW&service=lso&o2v=1&flowName=GeneralOAuthFlow">
+                        <div class="btnGoogel iconContiner"><i class="fa fa-google icon "></i> <span class="titleBtn">Google</span></div>
+                    </a>
+                    <a class="iconText" href="">
+                        <div class="btnFacebook iconContiner"><i class="fa fa-facebook icon "></i> <span class="titleBtn">Facebook</span></div>
+                    </a>
+                    <a class="iconText" href="">
+                        <div class="btnTwitter iconContiner"><i class="fa fa-twitter icon "></i> <span class="titleBtn">Twitter</span></div>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
