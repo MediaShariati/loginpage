@@ -1,17 +1,20 @@
 let feildEmail = document.getElementById('feildEmail');
-let feildpassword = document.getElementById('feildPassword');
+let feildPassword = document.getElementById('feildPassword');
 const btnLogin = document.querySelector('.btnLogin');
-const emailArrey = []
-const passwordArrey = []
+const emailArray = []
+const passwordArray = []
 
 
 
 function setDataToLoacalStorage() {
     event.preventDefault()
     const setEmail = feildEmail.value
-    const setPassword = feildpassword.value
-    emailArrey.push(setEmail)
-    passwordArrey.push(setPassword)
-    localStorage.setItem('Email' , JSON.stringify(emailArrey))
-    localStorage.setItem('Password' , JSON.stringify(passwordArrey))
+    const setPassword = feildPassword.value
+    emailArray.push(setEmail)
+    passwordArray.push(setPassword)
+    localStorage.setItem('Email', JSON.stringify(emailArray))
+    localStorage.setItem('Password', JSON.stringify(passwordArray))
+    feildEmail.value = ""
+    feildPassword.value = ""
+
 }

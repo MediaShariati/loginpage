@@ -182,6 +182,7 @@ form {
 @media only screen and (max-width: 1200px) {
 
     .continer {
+        margin: 2rem auto;
         width: 53rem;
         margin-left: auto;
         margin-right: auto;
@@ -221,7 +222,7 @@ form {
 
     .continer {
         width: 25rem;
-        margin: 5rem auto;
+        margin: 3rem auto;
     }
 
     .formContiner {
